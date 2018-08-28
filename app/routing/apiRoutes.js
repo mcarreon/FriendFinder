@@ -11,3 +11,27 @@ module.exports = function(app) {
         
     });
 }
+
+//-----
+//final compatibility test prototype
+var low = [1,1,1,1,1];
+var high = [5,5,5,5,5];
+
+function compatibilityProto() {
+
+    var compatibilityScore = 0;
+    for (var i = 0; i < low.length; i++) {
+        compatibilityScore += Math.abs(low[i] - high[i]);
+        console.log(compatibilityScore);
+    }
+    console.log('Total: ' + compatibilityScore);
+
+}
+//-----
+
+function compatibilityFriends(req) {
+
+
+}
+
+compatibilityProto();
