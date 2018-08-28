@@ -1,18 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey</title>
+
+
+    <!--BOOTSTRAP-->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+
+    <style>
+        .form-check>label {
+            font-size: .8em;
+        }
+    </style>
 </head>
+
 <body>
-    
-    <p id="test"></p>
 
+    <div class="container">
+        <form>
+            <p class="h1 mt-3">Survey</p>
+            <hr class="my-4">
+
+            <p class="h2">About You</p>
+            <div class="form-group">
+                <label for="user-name">What's your name?</label>
+                <small class="text-muted required">(required)</small>
+                <input type="username" class="form-control" id="user-name" aria-describedby="userName" placeholder="Nice to meet you.">
+            </div>
+            <div class="form-group">
+                <label for="user-photo">Show us the smile!</label>
+                <small class="text-muted required">(required)</small>
+                <input type="photo" class="form-control" id="user-photo" placeholder="Photo URL please!">
+            </div>
+
+            <p class="h2">Questions</p>
+
+            <!--Question 1-->
+            <p class="h4 mt-2">Your mind is always buzzing with unexplored ideas and plans.</p>
+            <div class="form-group container" id="q1">
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="1" id="defaultCheck1" name="q1">
+                    <label class="form-check-label" for="defaultCheck1">1 (Strongly Disagree)</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="2" id="defaultCheck1" name="q1">
+                    <label class="form-check-label" for="defaultCheck1">2</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="3" id="defaultCheck1" name="q1">
+                    <label class="form-check-label" for="defaultCheck1">3 (Neutral)</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="4" id="defaultCheck1" name="q1">
+                    <label class="form-check-label" for="defaultCheck1">4</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="5" id="defaultCheck1" name="q1">
+                    <label class="form-check-label" for="defaultCheck1">5 (Strongly Agree)</label>
+                </div>
+            </div>
+
+            <!--Question 2-->
+            <p class="h4 mt-2">Your mind is always buzzing with unexplored ideas and plans.</p>
+            <div class="form-group container" id="q2">
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="1" id="defaultCheck1" name="q2">
+                    <label class="form-check-label" for="defaultCheck1">1 (Strongly Disagree)</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="2" id="defaultCheck1" name="q2">
+                    <label class="form-check-label" for="defaultCheck1">2</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="3" id="defaultCheck1" name="q2">
+                    <label class="form-check-label" for="defaultCheck1">3 (Neutral)</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="4" id="defaultCheck1" name="q2">
+                    <label class="form-check-label" for="defaultCheck1">4</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="5" id="defaultCheck1" name="q2">
+                    <label class="form-check-label" for="defaultCheck1">5 (Strongly Agree)</label>
+                </div>
+            </div>
+
+            <!--Question 3-->
+            <p class="h4 mt-2">Your mind is always buzzing with unexplored ideas and plans.</p>
+            <div class="form-group container" id="q3">
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="1" id="defaultCheck1" name="q3">
+                    <label class="form-check-label" for="defaultCheck1">1 (Strongly Disagree)</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="2" id="defaultCheck1" name="q3">
+                    <label class="form-check-label" for="defaultCheck1">2</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="3" id="defaultCheck1" name="q3">
+                    <label class="form-check-label" for="defaultCheck1">3 (Neutral)</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="4" id="defaultCheck1" name="q3">
+                    <label class="form-check-label" for="defaultCheck1">4</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="5" id="defaultCheck1" name="q3">
+                    <label class="form-check-label" for="defaultCheck1">5 (Strongly Agree)</label>
+                </div>
+            </div>
+
+            <!--Question 4-->
+            <p class="h4 mt-2">Your mind is always buzzing with unexplored ideas and plans.</p>
+            <div class="form-group container" id="q4">
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="1" id="defaultCheck1" name="q4">
+                    <label class="form-check-label" for="defaultCheck1">1 (Strongly Disagree)</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="2" id="defaultCheck1" name="q4">
+                    <label class="form-check-label" for="defaultCheck1">2</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="3" id="defaultCheck1" name="q4">
+                    <label class="form-check-label" for="defaultCheck1">3 (Neutral)</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="4" id="defaultCheck1" name="q4">
+                    <label class="form-check-label" for="defaultCheck1">4</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="5" id="defaultCheck1" name="q4">
+                    <label class="form-check-label" for="defaultCheck1">5 (Strongly Agree)</label>
+                </div>
+            </div>
+
+            <!--Question 5-->
+            <p class="h4 mt-2">Your mind is always buzzing with unexplored ideas and plans.</p>
+            <div class="form-group container" id="q5">
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="1" id="defaultCheck1" name="q5">
+                    <label class="form-check-label" for="defaultCheck1">1 (Strongly Disagree)</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="2" id="defaultCheck1" name="q5">
+                    <label class="form-check-label" for="defaultCheck1">2</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="3" id="defaultCheck1" name="q5">
+                    <label class="form-check-label" for="defaultCheck1">3 (Neutral)</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="4" id="defaultCheck1" name="q5">
+                    <label class="form-check-label" for="defaultCheck1">4</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="5" id="defaultCheck1" name="q5">
+                    <label class="form-check-label" for="defaultCheck1">5 (Strongly Agree)</label>
+                </div>
+            </div>
+
+            <!--Question 6-->
+            <p class="h4 mt-2">Your mind is always buzzing with unexplored ideas and plans.</p>
+            <div class="form-group container" id="q6">
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="1" id="defaultCheck1" name="q6">
+                    <label class="form-check-label" for="defaultCheck1">1 (Strongly Disagree)</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="2" id="defaultCheck1" name="q6">
+                    <label class="form-check-label" for="defaultCheck1">2</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="3" id="defaultCheck1" name="q6">
+                    <label class="form-check-label" for="defaultCheck1">3 (Neutral)</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="4" id="defaultCheck1" name="q6">
+                    <label class="form-check-label" for="defaultCheck1">4</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="5" id="defaultCheck1" name="q6">
+                    <label class="form-check-label" for="defaultCheck1">5 (Strongly Agree)</label>
+                </div>
+            </div>
+
+            <!--Question 7-->
+            <p class="h4 mt-2">Your mind is always buzzing with unexplored ideas and plans.</p>
+            <div class="form-group container" id="q7">
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="1" id="defaultCheck1" name="q7">
+                    <label class="form-check-label" for="defaultCheck1">1 (Strongly Disagree)</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="2" id="defaultCheck1" name="q7">
+                    <label class="form-check-label" for="defaultCheck1">2</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="3" id="defaultCheck1" name="q7">
+                    <label class="form-check-label" for="defaultCheck1">3 (Neutral)</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="4" id="defaultCheck1" name="q7">
+                    <label class="form-check-label" for="defaultCheck1">4</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="5" id="defaultCheck1" name="q7">
+                    <label class="form-check-label" for="defaultCheck1">5 (Strongly Agree)</label>
+                </div>
+            </div>
+
+            <!--Question 8-->
+            <p class="h4 mt-2">Your mind is always buzzing with unexplored ideas and plans.</p>
+            <div class="form-group container" id="q8">
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="1" id="defaultCheck1" name="q8">
+                    <label class="form-check-label" for="defaultCheck1">1 (Strongly Disagree)</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="2" id="defaultCheck1" name="q8">
+                    <label class="form-check-label" for="defaultCheck1">2</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="3" id="defaultCheck1" name="q8">
+                    <label class="form-check-label" for="defaultCheck1">3 (Neutral)</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="4" id="defaultCheck1" name="q8">
+                    <label class="form-check-label" for="defaultCheck1">4</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="5" id="defaultCheck1" name="q8">
+                    <label class="form-check-label" for="defaultCheck1">5 (Strongly Agree)</label>
+                </div>
+            </div>
+
+            <!--Question 9-->
+            <p class="h4 mt-2">Your mind is always buzzing with unexplored ideas and plans.</p>
+            <div class="form-group container" id="q9">
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="1" id="defaultCheck1" name="q9">
+                    <label class="form-check-label" for="defaultCheck1">1 (Strongly Disagree)</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="2" id="defaultCheck1" name="q9">
+                    <label class="form-check-label" for="defaultCheck1">2</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="3" id="defaultCheck1" name="q9">
+                    <label class="form-check-label" for="defaultCheck1">3 (Neutral)</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="4" id="defaultCheck1" name="q9">
+                    <label class="form-check-label" for="defaultCheck1">4</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="5" id="defaultCheck1" name="q9">
+                    <label class="form-check-label" for="defaultCheck1">5 (Strongly Agree)</label>
+                </div>
+            </div>
+
+            <!--Question 10-->
+            <p class="h4 mt-2">Your mind is always buzzing with unexplored ideas and plans.</p>
+            <div class="form-group container" id="q10">
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="1" id="defaultCheck1" name="q10">
+                    <label class="form-check-label" for="defaultCheck1">1 (Strongly Disagree)</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="2" id="defaultCheck1" name="q10">
+                    <label class="form-check-label" for="defaultCheck1">2</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="3" id="defaultCheck1" name="q10">
+                    <label class="form-check-label" for="defaultCheck1">3 (Neutral)</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="4" id="defaultCheck1" name="q10">
+                    <label class="form-check-label" for="defaultCheck1">4</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" value="5" id="defaultCheck1" name="q10">
+                    <label class="form-check-label" for="defaultCheck1">5 (Strongly Agree)</label>
+                </div>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary" id="submit-btn">Submit</button>
+        </form>
+    </div>
+
+
+    <!--USER SCRIPT-->
     <script>
-
         var currentURL = window.location.origin;
         var dummyData = {
             "name": "Joel",
@@ -20,10 +306,47 @@
             "scores": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
         };
 
-        $.post(currentURL + "/api/friends", dummyData, function(data) {
+        $.post(currentURL + "/api/friends", dummyData, function (data) {
             $("#test").text(data.name);
+        });
+
+        function getQuests(questionNum) {
+            var questionValue = 404;
+
+            $(`[name=${questionNum}]`).each(function () {
+                if (this.checked) {
+                    questionValue = this.value;
+                }
+            });
+
+            return questionValue;
+        }
+
+        $('#submit-btn').on('click', function (event) {
+
+            event.preventDefault();
+            
+            var userAnswers = [];
+
+            for (var i = 1; i < 11; i++) {
+                userAnswers.push(getQuests(`q${i}`));
+            }
+            
+            console.log(userAnswers);
+            
+
         });
     </script>
 
+    <!--BOOTSTRAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+
+
+
+
 </body>
+
 </html>
