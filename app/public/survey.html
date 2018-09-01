@@ -24,7 +24,10 @@
 
     <div class="container">
         <form>
-            <p class="h1 mt-3">Survey</p>
+            <div class="d-flex justify-content-between">
+                <p class="h1 mt-3">Survey</p>
+                <a class="h3 mt-4" href="/">Home</a>
+            </div>
             <hr class="my-4">
 
             <p class="h2">About You</p>
@@ -308,21 +311,20 @@
         <p id="test"></p>
     </div>
 
-    <div class="modal fade" id="friendModal" tabindex="-1" role="dialog" aria-labelledby="friendModalLabel" aria-hidden="true">
+    <div class="modal fade" id="friend-modal" tabindex="-1" role="dialog" aria-labelledby="friend-modal-label" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="friendModalLabel"></h5>
+                    <h5 class="modal-title" id="friend-modal-label"></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <img class="card-img-top" src="https://via.placeholder.com/250x250" alt="profile photo" id="friend-modal-image">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Not quite who you were thinking? Try again!</button>
                 </div>
             </div>
         </div>
@@ -366,8 +368,9 @@
                 };
 
                 $.post(currentURL + "/api/friends", userData, function (data) {
-                    $("#friendModalLabel").text(data.name);
-                    $("#friendModal").modal('toggle');
+                    $("#friend-modal-label").text(data.name);
+                    $("#friend-modal-image").attr('src', data.photo);
+                    $("#friend-modal").modal('toggle');
                 });
             }
 

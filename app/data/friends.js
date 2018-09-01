@@ -1,23 +1,23 @@
 var friendsArray = [
     {
-        "name": "Alex",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "name": "Morty",
+        "photo": "https://via.placeholder.com/150x150",
         "scores": [
+            "1", 
             "5", 
-            "5", 
-            "5", 
-            "5", 
-            "5", 
+            "4", 
+            "3", 
+            "2", 
             "5",
-            "5", 
-            "5", 
-            "5", 
-            "5"
+            "4", 
+            "3", 
+            "1", 
+            "2"
         ]
     },
     {
         "name": "Jerry",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo": "https://via.placeholder.com/150x150",
         "scores": [
             "2",
             "3", 
@@ -32,19 +32,19 @@ var friendsArray = [
         ]
     },
     {
-        "name": "Charlie",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "name": "Beth",
+        "photo": "https://via.placeholder.com/150x150",
         "scores": [
+            "3", 
+            "5", 
+            "2", 
             "1", 
+            "4", 
+            "2", 
+            "3", 
             "1", 
-            "1", 
-            "1", 
-            "1", 
-            "1", 
-            "1", 
-            "1", 
-            "1", 
-            "1"
+            "4", 
+            "2"
         ]
     }
 ];
